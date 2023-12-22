@@ -11,13 +11,13 @@ export default function Navbar() {
     setVisible((value) => !value);
   };
   return (
-    <nav className="flex justify-between items-center mb-10 backdrop-blur-lg bg-white bg-opacity-5 p-5">
+    <nav className="flex justify-between items-center mb-10 backdrop-blur-3xl bg-white bg-opacity-5 p-5 px-10 w-full">
       <div className="flex items-center space-x-2">
         <Image src={"/logo.svg"} height={32} width={32} alt="logo" />
         <p className="text-white font-michroma">0xArchitect</p>
       </div>
       <div
-        className="md:hidden flex items-center text-white cursor-pointer bg-green-600"
+        className="md:hidden flex items-center text-white cursor-pointer"
         onClick={onClickHamburger}
       >
         {!visible ? (

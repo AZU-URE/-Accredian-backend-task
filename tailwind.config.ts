@@ -15,11 +15,10 @@ const config: Config = {
       },
       backgroundColor: {
         primary: "#182246",
+        secondary: "#2c1b59",
         btnBlue: "#00A3FF",
       },
       fontFamily: {
-        // primary: ["Michroma", "sans-serif"],
-        // secondary: ["Questrial", "sans-serif"],
         michroma: ["var(--font-michroma)"],
         questrial: ["var(--font-questrial)"],
       },
