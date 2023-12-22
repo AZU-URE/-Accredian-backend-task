@@ -15,6 +15,7 @@ const config: Config = {
       },
       backgroundColor: {
         primary: "#182246",
+        btnBlue: "#00A3FF",
       },
       fontFamily: {
         // primary: ["Michroma", "sans-serif"],

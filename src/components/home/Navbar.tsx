@@ -7,6 +7,7 @@ import { IoClose } from "react-icons/io5";
 export default function Navbar() {
   const [visible, setVisible] = useState(false);
   const onClickHamburger = () => {
+    console.log(visible);
     setVisible((value) => !value);
   };
   return (
@@ -16,7 +17,7 @@ export default function Navbar() {
         <p className="text-white font-michroma">0xArchitect</p>
       </div>
       <div
-        className="md:hidden flex items-center text-white cursor-pointer"
+        className="md:hidden flex items-center text-white cursor-pointer bg-green-600"
         onClick={onClickHamburger}
       >
         {!visible ? (
