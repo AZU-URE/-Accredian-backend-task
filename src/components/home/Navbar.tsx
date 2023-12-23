@@ -3,8 +3,10 @@ import Image from "next/image";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
-
-export default function Navbar() {
+interface btnTitle {
+  title: string;
+}
+export default function Navbar(data: btnTitle) {
   const [visible, setVisible] = useState(false);
   const onClickHamburger = () => {
     console.log(visible);
@@ -33,7 +35,7 @@ export default function Navbar() {
       </div>
       <div className="md:flex hidden">
         <button className="p-2 px-3 text-white font-questrial bg-white bg-opacity-30 rounded-lg">
-          Connect
+          <p>{data.title}</p>
         </button>
       </div>
     </nav>

@@ -1,6 +1,12 @@
+"use client";
 import ServiceCard from "./ServiceCard";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 export default function Service() {
+  const router = useRouter();
+  const onGetQuote = () => {
+    router.push("/getquote");
+  };
   return (
     <section className="w-full">
       <div className="flex flex-col justify-center items-center">
@@ -24,7 +30,10 @@ export default function Service() {
           <p className="font-michroma md:text-4xl mb-6">
             Join us in Shaping the Future
           </p>
-          <button className="sm:p-3 sm:px-8 p-1 px-2 rounded-md">
+          <button
+            className="sm:p-3 sm:px-8 p-1 px-2 rounded-md"
+            onClick={onGetQuote}
+          >
             <Image
               src={"/services/customQuotes.svg"}
               alt="customQuotes"

@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="w-full">
-      <div className="font-michroma flex items-center justify-center relative">
+      <div className=" flex items-center justify-center relative">
         <Image
           src={"/hero/mesh.svg"}
           height={600}
@@ -47,14 +47,16 @@ export default function Hero() {
             width={80}
             className="absolute sm:bottom-0 sm:right-24 -bottom-11 right-10 "
           ></Image>
-          <p className="md:text-5xl xl:text-6xl text-xl mb-5">Architecting</p>
-          <p className="md:text-5xl xl:text-6xl text-xl mb-5">
+          <p className="md:text-5xl xl:text-6xl text-xl mb-5 font-michroma">
+            Architecting
+          </p>
+          <p className="md:text-5xl xl:text-6xl text-xl mb-5 font-michroma">
             Decentralized Dreams
           </p>
           <p className="md:text-lg sm:text-sm text-xs font-questrial">
             Crafting Web3 Experiences Beyond Imagination
           </p>
-          <button className="sm:p-3 sm:px-8 p-1 px-2 md:text-lg sm:text-sm mt-5 text-xs font-questrial rounded-md bg-btnBlue">
+          <button className="sm:p-2 sm:px-8 p-1 px-5 md:text-lg sm:text-sm mt-5 text-xs font-questrial rounded-md bg-btnBlue">
             Schedule
           </button>
         </div>
